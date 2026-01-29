@@ -276,45 +276,48 @@
 
         <!-- Contacto  -->
         <section id="Contacto" aria-labelledby="Contacto">
-            <div class="container">
-            <header> 
+            <div class="container py-5">
+            <header class="mb-4"> 
                 <h2 id="Contacto"> Contacto </h2>
-                <p> Si deseas ponerte en contacto conmigo, puedes enviarme un correo a: </p> 
+                <p class="text-muted"> 
+                    Si deseas ponerte en contacto conmigo, puedes enviarme un correo a: 
+                </p> 
             </header>
 
             <form action="#" methiod="post"> 
                 <fieldset>
                         <legend> Escribenos </legend>
-                
-                <p> 
-                    <label for="nombre"> Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </p>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6"> 
+                            <label for="nombre" class="form-label"> Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
 
-                <p> 
-                    <label for="email"> Correo electronico: </label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-                
+                        <div class="col-12 col-md-6"> 
+                            <label for= "email" class="form-label"> Correo electronico: </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
 
-                <p> 
-                    <label for="Tema">  Tema: </label> <br>
-                    <select id="tema" name="tema">
-                        <option value="Albumenes"> Albumenes </option>
-                        <option value="Conciertos"> Conciertos </option>
-                        <option value="otro"> Otro </option>
-                    </select>
-                </p>
+                        <div class="col-12"> 
+                            <label for="Tema" class="form-label">  Tema: </label> <br>
+                            <select id="tema" name="tema" class="form-select">
+                                <option value="Albumenes"> Albumenes </option>
+                                <option value="Conciertos"> Conciertos </option>
+                                <option value="otro"> Otro </option>
+                            </select>
+                        </div>
 
-                <p> 
-                    <label for="mensaje"> Mensaje: </label> <br>
-                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
-                </p>
-               
-                <p> 
-                    <button type="submit"> Enviar </button>
-                    <button type="reset"> Limpiar </button>
-                </p>
+                        <div class="col-12"> 
+                            <label for="mensaje" class="form-label"> Mensaje: </label> <br>
+                            <textarea id="mensaje" name="mensaje" rows="10" class="form-control" required></textarea>
+                        </div>
+                    
+                        <div class="col-12"> 
+                            <button type="submit" class="btn btn-primary me-2"> Enviar </button>
+                            <button type="reset" class="btn btn-outline-secondary"> Limpiar </button>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
             </div>
