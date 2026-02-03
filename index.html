@@ -15,7 +15,7 @@
             <p>Historia, canciones y conciertos de ellos</p>
         </div>
 
-        <nav  class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegacion principal">
+        <nav  class="navbar navbar-expand-md navbar-danger bg-danger" aria-label="Navegacion principal">
             <div class="container">
                 <button 
                 class="navbar-toggler"
@@ -324,17 +324,22 @@
         </section>
 
         <!-- Pie de Pgaina -->
-         <footer>
-            <nav  class= "container" aria-labelledby="Enlaces del footer">
-                <ul>
-                    <li><a href="#Inicio"> Inicio </a></li>
-                    <li><a href="#Contacto"> Contacto </a></li>
-                    <li><a href="#Faq"> Faq </a></li>
-                </ul> 
-            </nav>
-            <p>
-                <small> 2026 Camilo Septimo - fan page </small>
-            </p>
+         <footer class="bg-light mt-5">
+            <div class="container py-4">
+                <div class="row g-3 align-items-center">
+                    <nav class= "col-12 col-md-6" aria-labelledby="Enlaces del footer">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#Inicio" class="text-decoration-none"> Inicio </a></li>
+                            <li><a href="#Contacto" class="text-decoration-none"> Contacto </a></li>
+                            <li><a href="#Faq" class="text-decoration-none"> Faq </a></li>
+                        </ul> 
+                    </nav>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <small class="text-muted"> © 2026 Camilo Septimo - FanPage </small>
+                        <!-- Para hacer el de copyright es con ALT+0169-->
+                    </div>
+                </div>
+            </div> 
          </footer>
          <script  src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     </main>     
